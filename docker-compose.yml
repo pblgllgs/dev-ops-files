@@ -5,7 +5,7 @@ services:
     container_name: fraud-service
     image: pblgllgs/fraud-service-sb3-grafana-stack:1.0.0
     expose:
-      - "8080:8080"
+      - "8081:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/fraud_detection
       SPRING_DATASOURCE_USERNAME: root
@@ -15,7 +15,7 @@ services:
     container_name: loan-service
     image: pblgllgs/loan-service-sb3-grafana-stack:1.0.0
     expose:
-      - "8081:8080"
+      - "8080:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/loan_service
       SPRING_DATASOURCE_USERNAME: root
